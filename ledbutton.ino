@@ -9,7 +9,9 @@ pinMode(BUTTON, INPUT_PULLUP);
 }
 
 void loop() {
- digitalWrite(LED, HIGH);
  int BUT = digitalRead(33);
-
-}
+if (BUT == 0){  
+digitalWrite(LED, LOW);
+}else{
+digitalWrite(LED, HIGH);
+}}
